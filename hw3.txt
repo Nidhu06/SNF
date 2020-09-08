@@ -1,0 +1,67 @@
+Why we use DOCTYPE ?
+
+The main reason as to why DOCTYPE is used because it helps the browser know the version or standard of html or any other markup languange that is being used in document.
+
+
+Types of Tags in HTML : 
+
+
+<html> - Defines the root of an HTML document
+
+<body> - It contains everything that will be visible on a web page. E.g. Audio,Video,images.
+
+<h1> to <h6> - They are written inside the body tag and displays different style and font.
+
+<p> - We can write content in paragraph tag which will be visible on a web page.
+
+<br> - It is an empty tag which causes single line break.It is generally kept at the end of each line.
+
+<hr> - It is used to draw a horizontal line from left to right,in order to section a page into many parts.
+
+<div> - It defines a divison or section in a HTML Document.Any sort of content can be put inside this tag.Eg image.This tag is styled using class or id attribute.This
+        is block level element.
+		
+<section> -  Defines a section in a HTML Document with meaningful content. 
+
+<article> - Self contained content which makes sense on its own and its independent from the rest of the site.Used for Blog Post,News.
+
+<header> - It defines the header of a document.
+
+<footer> - The <footer> tag defines a footer for a document or section.
+
+<aside> - Defines content other than the content already present and this will be placed on the sidebar of document.It can be style using CSS.
+
+<span> - It is used to color a part of text in document and styled using CSS.It can This is incline element.
+
+<pre> - It preserves white-space and line in text.The default font it displays in is Courier
+
+<table> - It defines HTML table.
+
+<tr> - This is table row.
+ 
+<th> - This is table header ,by default it will be in bold and centre.
+
+<td> - This refers to table data which by default will be left aligned.
+
+<caption> - Comes right after table tag .It defines caption of a table.
+
+<img> - It is used to embed an image in a web page.Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.The <img> tag is empty, it contains attributes only, and does not have a closing tag. The <img> tag has two required attributes:
+
+    src - Specifies the path to the image
+    alt - Specifies an alternate text for the image
+
+<a>	- Defines a hyperlink.The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+
+<b> - It is used to bold a text.
+
+<i> - It is used to change the style of text to italics.	
+
+<style> - It is used to define style information (CSS) for a document.Inside the <style> element you specify how HTML elements should render in a browser.
+
+<strong> - It is used to define text with strong importance. The content inside is typically displayed in bold.
+
+<ul> - It defines an unordered (bulleted) list.Use the <ul> tag together with the <li> tag to create unordered lists.
+
+<li> -  The <li> tag defines a list item.The <li> tag is used inside ordered lists(<ol>), unordered lists (<ul>), and in menu lists (<menu>).In <ul> and <menu>, the list items will usually be displayed with bullet points.In <ol>, the list items will usually be displayed with numbers or letters.
+
+<ol> - The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical.The <li> tag is used to define each list item.

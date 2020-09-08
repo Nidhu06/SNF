@@ -1,0 +1,76 @@
+
+Task based on getting started with browsers.
+
+About HTTP :
+
+HTTP is a top-level application protocol that exchanges information between a client computer and a local or remote web server.It mainly uses GET and POST method.
+
+
+I) Difference between HTTP 1.1 and HTTP 2 
+
+ 
+HTTP 1.1 
+
+* HTTP/1.1, the first standardized version of HTTP, was introduced in 1997.
+* It supports connection reuse i.e. for every TCP connection there could be multiple requests and responses and pipelining where the client can request several resources from the server at once.
+* It introduced the feature of persistent connection,pipeling,cache - control.
+* Headers are sent on every request leading to a lot of duplicate data being sent uncompressed across the wire.
+* Text based protocol that is in the readable form.
+* Digest authentication used in HTTP1.1 is an improvement over HTTP1.0.
+
+
+HTTP 2.0
+
+* HTTP 2.0 was introduced in 2015.
+* Uses multiplexing, where over a single TCP connection many responses will be provided to the client almost at the same time.
+* It also provides a feature called server push that allows the server to send data that the client will need but has not yet requested.
+* Header compression is included by default in HTTP/2 using HPACK.
+* It is a binary protocol (HTTP requests are sent in the form of 0s and 1s). Needs to be converted back from binary in order to read it.
+* Though security is still not mandatory, it is mostly encrypted.
+
+                                       
+
+II) Difference between GET and POST method.
+
+GET 
+
+* Requests data from a specified source.
+* GET requests can be cached.
+* GET requests remain in browser history.
+* GET requests can be bookmarked.
+* GET requests have length restrictions.
+* GET requests should not be used while dealing with sensitive data(passwords).
+
+
+POST 
+
+* Submits data to a specified resource.
+* POST requests cannot be cached.
+* POST requests do not remain in browser history.
+* POST requests cannot be bookmarked.
+* POST requests have no restrictions on data length.
+* POST requests are safer as searched data are not stored in browser history.
+ 
+                                        
+
+III) Differences between Browser JS(console) and NodeJs console.
+
+Broswer Js
+
+* Browser is the Front End where JavaScript is used.
+* Here JavaScript is sandboxed in browser which acts as a strict environment with restrictions and can only access prompt here.
+* The browser is interacting with the DOM here.
+* In browser environment,you don't get the luxury to choose what browser your visitors will use.
+
+
+Nodejs 
+
+* Nodejs is the Back End where Javascript is used.
+* JavaScript running on Nodejs can directly access the file system and more.
+* Nodejs does not contain window or document objects.
+* Nodejs can control the environment and even knows which version of Node the application will run on.
+
+
+
+
+
