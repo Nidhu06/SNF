@@ -1,0 +1,34 @@
+
+Task on Datatypes 
+
+
+I) Use typeof in all the datatypes and check the result
+
+typeof(1)         - number
+typeof(1.1)       - number
+typeof("1.1")     - string
+typeof(true)      - boolean
+typeof(null)      - object
+typeof(undefined) - undefined
+typeof([])        - object
+typeof({})        - object
+
+
+II) Write a blog about objects and its internal representation in Javascript 
+
+Every web page resides inside a browser window which can be considered as an object.
+
+A Document object represents the HTML document that is displayed in the window.
+
+A Document object has various properties that refer to the other objects which allow access to and modification of document content.
+
+The way a document content is assessed and modified is called the Document Object Model or DOM.
+
+The Objects are organized in a hierarchical structure.
+
+     -  The Window object is supported by all browsers and represents the browser's window. Eg window.innerWidth (inner width of Browser window)
+
+     -  The Document object refers to HTML document and can be created using html <body> tag.
+
+     -  The Form objects are enclosed in the <form> ...</form> tags.It contains form elements defined objects such as fields,buttons,radio buttons and checkboxes.
+
