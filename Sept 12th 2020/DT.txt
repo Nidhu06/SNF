@@ -1,0 +1,138 @@
+﻿TASKS ON DATATYPES.
+
+I)Difference between LocalStorage and SessionStorage
+
+LocalStorage :
+
+* The data in localStorage does not expire.
+* The syntax is window.sessionStorage.
+* The localStorage properties allow to save key/value pairs in a web browser.
+
+SessionStorage :
+
+* The data in sessionStorage is cleared when the page session ends and also survives page reloads.
+* The syntax is window.sessionStorage.
+* The sessionStorage properties allow to save key/value pairs in a web browser.
+------------------------------------------------------------------------------------------
+
+II)Write-up on the concept of Error-Handling
+
+*When there is an JavaScript error on web page users get to see nothing.
+*If an error is possible,someone will make it.The designer must assume all the possible errors that occur and design
+ so as to minimize the chance of the error in the first place.Errors should be easy to detect,they should have minimal
+ consequences and if possible their effects should be reversible. - Donald A. Norman
+ Rules :
+ *1)Assume your code fails. 
+    Try to assume any value given in your code as null.
+    What if destination is null?
+	What if source is null?
+ *2)Log errors to the server 
+ *3)You ,not the browser ,handle errors 
+     -Thrown errors contain extra information
+	 -Errors that are caught are considered to have been handled.
+              -window.onerror	 
+	   ->Last stop before browser responds.
+	   ->Return true to indicate not to respond.
+	   ->Only supported in IE and Firefox.
+	 
+	 error ->try-catch ->window.onerror ->Browser Error
+ *4)Identify where errors might occur	 
+     Type coercion errors  code 17
+	 Datatype errors   code 20,21,22,23
+	  - often occurs with function arguments
+	  - typical symptom of insufficient value checking
+	 Communication errors 
+	  - Invalid URL/post data
+	       -> long string concatenations.
+		   -> Remember to use encodeURI Component() on each part. 
+		   -> not encodeURI() .
+		   -> Parameters should be name correctly.
+	  - Server response status   code 28
+	       -> 200 is not the only valid status that may be returned.
+		   -> beware of 304.
+		   -> Any other status means you didnt get the data.
+	  - No network connection  code 30
+	       -> Internet Explorer throws an error when calling open() but goes through normal lifecycle.
+		   ->Firfox fails silently but throws an error if you try to access any response property
+		     (status,status Text,response Text)
+	     
+	  - Server response content
+	       -> Status of 200/304 is not enough.
+		   -> Server errors often return HTML
+		   -> If possible set status to 500.
+*5) Throw your own errors		  code  33
+        
+	 Errors should be thrown in the low-level parts of the application(utilities,libraries).
+	 Use try-catch blocks in higher level parts	
+        -> Application specific.
+		-> Client-side business logic
+*6) Distinguish fatal vs non-fatal		
+		   
+	Fatal Errors:
+	    -> Application cannot continue if this error occurs.
+		->Interferes with the user's ability to be productive.
+		->Other errors will occur if application continues.
+		->Message the user immediately.
+		->Reload.
+		
+	Non-Fatal Errors	code 42
+	    ->It won't interfere with users main tasks
+		->Affects only a portion of the page.
+		   - easily ignored.
+		->Recovery is possible.
+        ->A repeat of the action may result in the appropriate result.
+ 		->It wont tell the user the code isn't working unless necessary.
+		
+    Note : User's experience comes first and dont let the code determine what is fatal or not.
+		
+*7) Provide a debug mode  code 45,46
+
+    ->Assign a variable that is globally available.
+    ->try-catch should re-throw the error.
+    ->window.onerror should return false.
+    ->Allow the browser to handle the error. 	
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+III) Find the fix as to why the below error occur
+
+1) Error Type -  Uncaught TypeError: Cannot read property 'not' of undefined	
+
+  This error mainly occurs when a variable is declared but not assigned any value to it.
+
+Eg :     function myFunc(inVar) {
+          if (inVar === undefined) {
+          console.log(inVar.not)
+         }
+         return inVar;
+        }
+        var testVar;      // Here testVar has not been given a value.
+        console.log(myFunc(testVar)); // function will not accept an undefined argument .
+
+
+  Error can be handled by assigning a value to testVar.
+  
+2) Error Type - ‘undefined’ is not an object (evaluating)
+  
+   This is an error that occurs when you read a property or call a method on an undefined object.
+   
+Eg :  var testArray=undefined;
+      if(testArray.length===0)
+         {
+		 console.log("Array is empty")
+		 }	  
+	
+3) Error Type - ‘null’ is not an object (evaluating)
+  
+   This is an error that occurs when you read a property or call a method on null object.
+   
+Eg :  var testArray=null;
+      if(testArray.length===0)
+         {
+		 console.log("Array is empty")
+		 }	 	
+4) Error Type -
+
+ This error occurs when an uncaught error which was found by the window.onerror handler, instead of being caught in try-catch block
+ will get reported as "Script error" instead of containing useful information. 	
+	
