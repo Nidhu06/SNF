@@ -1,0 +1,509 @@
+
+Below programs in anonymous function and  IIFE
+
+1) Print odd numbers in an array 
+a)Anonymous
+
+var odd =function(a)
+
+{
+
+   var value = "";
+
+   for(var i=0;i<a.length;i++)
+
+{
+    
+   if(a[i]%2!==0)
+
+{
+       
+   value = value + " " + a[i]; 
+    
+}}
+
+   console.log(value.trim());
+
+}
+
+   odd([1,2,3,4,5,6,7,8,9]);
+
+
+b) IIFE
+
+(function(a)
+
+{
+
+   var value = "";
+
+   for(var i=0;i<a.length;i++)
+
+{
+    
+   if(a[i]%2!==0)
+
+{
+       
+   value = value + " " + a[i]; 
+    
+}}
+
+   console.log(value.trim());
+
+}
+)
+   ([1,2,3,4,5,6,7,8,9]);
+
+-----------------------------------------------------------------------------------------------------------------
+
+2) Convert all the strings to title caps in a string array
+a)
+var titleCase = function(str) 
+{
+  
+str = str.toLowerCase().split(' ');
+  
+for (var i = 0; i < str.length; i++) 
+{
+    
+str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+  
+}
+ 
+return str.join(' ');
+
+}
+
+console.log(titleCase("nEvEr sAy nEvEr"));
+
+b)
+
+(function(str) 
+{
+  
+str = str.toLowerCase().split(' ');
+  
+for (var i = 0; i < str.length; i++) 
+{
+    
+str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+  
+}
+ 
+console.log(str.join(' '));
+
+}
+)
+("nEvEr sAy nEvEr");
+
+-------------------------------------------------------------------------------------------------
+
+3) Sum of all numbers in an array
+
+a)
+
+var sum = function(a)
+
+{
+
+var value = 0;
+
+for(var i=0;i<a.length;i++)
+
+{
+    
+value = value + a[i];
+
+}
+
+console.log(value);
+
+}
+sum([1,2,3,4,5,6,7,8,9]);
+
+
+b)
+
+(function(a)
+
+{
+
+var value = 0;
+
+for(var i=0;i<a.length;i++)
+
+{
+    
+value = value + a[i];
+
+}
+
+console.log(value);
+
+})
+
+([1,2,3,4,5,6,7,8,9]);
+
+-----------------------------------------------------------------------------------------------------------------
+4) Return all the prime numbers in an array
+
+a)
+
+var prime = function(arr)
+
+{
+
+var value = "";
+
+for(var i=1 ;i<(arr.length);i++)
+
+{ 
+    var flag = 0;
+    
+
+for(var j=2;j<=arr[i]/2;j++)
+
+{
+    
+if(arr[i]%j===0)
+    
+{
+      
+flag = 1;
+     
+ break;
+    
+}
+}
+
+if(flag===0)
+
+{
+    
+value = value + arr[i] + " ";
+
+}
+}
+
+console.log(value);
+
+}
+
+prime([2,3,4,5,6,7,8,9]);
+
+b)
+
+(function(arr)
+
+{
+
+var value = "";
+
+for(var i=0 ;i<(arr.length);i++)
+
+{ 
+    var flag = 0;
+    
+
+for(var j=2;j<=arr[i]/2;j++)
+
+{
+    
+if(arr[i]%j===0)
+    
+{
+      
+flag = 1;
+     
+ break;
+    
+}
+}
+
+if(flag===0)
+
+{
+    
+value = value + arr[i] + " ";
+
+}
+}
+
+console.log(value);
+
+}
+)
+([2,3,4,5,6,7,8,9]);
+
+----------------------------------------------------------------------------
+5) Return all the palindromes in an array
+a)
+var palindrome = function(a)
+{
+var l = 0 ;
+var aa = []
+var h = a.length-1;
+while(h>l)
+{
+    if(a[l++]!=a[h--])
+    {
+        return;
+    }
+}
+console.log(a);
+}
+palindrome("NIIN");
+palindrome("HI");
+
+b)
+
+(function(a)
+{
+var l = 0 ;
+var aa = []
+var h = a.length-1;
+while(h>l)
+{
+    if(a[l++]!=a[h--])
+    {
+        return;
+    }
+}
+console.log(a);
+})
+("NIIN");
+("HI");
+
+----------------------------------------------------------------------------------------
+6) Return median of two sorted arrays of same size 
+
+a) 
+var ar1 = [1, 2, 3, 4, 5];
+
+var ar2 = [6, 7, 8, 9, 10];
+
+var ar = function(ar1,ar2)
+
+{
+
+var result = ar1.concat(ar2);
+
+var len = result.length;
+
+var m = len/2;
+
+var s = result[m];
+
+var n = result[m-1];
+
+var rest = (s+n)/2;
+
+console.log(Math.floor(rest));
+
+}
+
+ar(ar1,ar2);
+
+
+b)
+
+(function(ar1,ar2)
+
+{
+
+var result = ar1.concat(ar2);
+
+var len = result.length;
+
+var m = len/2;
+
+var s = result[m];
+
+var n = result[m-1];
+
+var rest = (s+n)/2;
+
+console.log(Math.floor(rest));
+
+})
+([1, 2, 3, 4, 5],[6, 7, 8, 9, 10]);
+-----------------------------------------------------------------------------------------------------
+7) Remove duplicates from an array
+a)
+var duplicate = function(a)
+
+{
+
+var b = []
+;
+var n = a.length;
+
+for(var i = 0; i < n; i++)
+    
+{
+       
+       for(var j = i+1; j < n; )
+        
+            {
+           
+                if(a[j] == a[i])
+           
+                {
+              
+                     for(var k = j; k < n; k++)
+                
+                   {
+                    
+                      a[k] = a[k+1];
+               
+                    }
+               
+                     n--;
+            
+                }
+            
+                else
+            
+                {
+                
+                  j++;
+           
+               }
+       
+           }
+ 
+}  
+
+for(i = 0; i < n; i++)
+    
+ {
+        
+b.push(a[i]);
+    
+ }    
+
+console.log(b);    
+
+}
+
+
+duplicate([11,11,11,12,12,13]);
+
+b)
+
+(function(a)
+
+{
+
+var b = []
+;
+var n = a.length;
+
+for(var i = 0; i < n; i++)
+    
+{
+       
+       for(var j = i+1; j < n; )
+        
+            {
+           
+                if(a[j] == a[i])
+           
+                {
+              
+                     for(var k = j; k < n; k++)
+                
+                   {
+                    
+                      a[k] = a[k+1];
+               
+                    }
+               
+                     n--;
+            
+                }
+            
+                else
+            
+                {
+                
+                  j++;
+           
+               }
+       
+           }
+ 
+}  
+
+for(i = 0; i < n; i++)
+    
+ {
+        
+b.push(a[i]);
+    
+ }    
+
+console.log(b);    
+
+}
+)
+
+([11,11,11,12,12,13]);
+------------------------------------------------------------------------------------------------------------------------------
+8) Rotate an array by k times and return the rotated array
+a)
+var rotate = function(arr)
+{
+var arr2 = [];
+var k = 3;
+for(var i = 0;i<k;i++)
+{
+  var last = arr[arr.length-1]
+  for(j= arr.length-1;j>0; j--)
+  {
+    arr[j] = arr[j-1];
+   }
+   arr[0] = last;
+}
+for(i=0; i<arr.length; i++)
+{
+    arr2.push(arr[i]);
+ }
+console.log(arr2);                                                                          o/p [3,4,5,1,2]
+}
+rotate([1, 2, 3, 4, 5]);
+
+b)
+
+(function(arr)
+{
+var arr2 = [];
+var k = 3;
+for(var i = 0;i<k;i++)
+{
+  var last = arr[arr.length-1]
+  for(j= arr.length-1;j>0; j--)
+  {
+    arr[j] = arr[j-1];
+   }
+   arr[0] = last;
+}
+for(i=0; i<arr.length; i++)
+{
+    arr2.push(arr[i]);
+ }
+console.log(arr2);                                                                          o/p [3,4,5,1,2]
+})
+     
+([1, 2, 3, 4, 5]);
+
+
+
+
+
+
+
+
+
+

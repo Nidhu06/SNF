@@ -1,0 +1,808 @@
+Mandatory Zen tasks
+
+1) Add 5 to every number
+
+function addFive(num) {
+var result = num + 5;
+console.log(result);
+}
+addFive(5);
+addFive(0);
+addFive(-5);
+
+O/P : 10
+         5
+         0
+------------------------------------------------------------------------------------------
+2) Write a function called “getOpposite”. Given a number, return its opposite
+
+function getOpposite(num1) 
+
+{
+ 
+ if((num1!==parseInt(num1))||(num1!==parseFloat(num1)))
+  
+{
+   
+ return -1;  
+  
+}
+  
+else if((num1>0)&&(num1!==0))
+ 
+ {
+    
+return -num1;
+  
+}
+  
+else if(num1<0)
+ 
+ {
+   
+ return (-num1);
+
+}
+
+else
+{
+    
+return 0;
+}
+}
+
+console.log( getOpposite(5)); 
+
+console.log( getOpposite(0));
+
+console.log( getOpposite(-5));
+
+console.log( getOpposite("5a"));  
+
+console.log(getOpposite(5.5))
+
+------------------------------------------------------------------------------------------------------------
+
+3) Convert minutes to seconds
+
+function toSeconds(min)
+
+{
+
+var a = (min)*(60); 
+
+console.log(a);
+
+
+}
+
+toSeconds(5);
+
+toSeconds(3);
+
+toSeconds(2);
+------------------------------------------------------------
+
+4) Create a function that takes a string and returns it as an integer.
+
+function toInteger(str)
+
+{
+
+var a = (+str); // unary operator converts string to number
+
+console.log(a);
+
+console.log(typeof(a));
+
+}
+
+toInteger("1000");
+
+toInteger("6");
+
+toInteger("12");
+-----------------------------------------------------------
+5) Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+
+function nextNumber(myint)
+
+{
+
+var a = (myint) + 1; 
+
+console.log(a);
+
+
+}
+
+nextNumber(0);
+
+nextNumber(9);
+
+nextNumber(-3);
+------------------------------------------------------------
+6) Create a function that takes an array and returns the first element.
+
+function getFirstElement(arr)
+
+{
+
+var a = arr[0];
+
+console.log(a);
+
+}
+
+getFirstElement([1,2,3]);
+
+getFirstElement([80,5,100]);
+
+getFirstElement([-500,0,50]);
+
+---------------------------------------------------------------------------
+7) Write a function that converts hours into seconds.
+
+function hourtoSeconds(arr)
+
+{
+for(var i = 0;i<arr.length;i++)
+
+{
+
+var a = (arr[i])*(3600); 
+
+
+console.log(a);
+
+}
+
+}
+
+hourtoSeconds([1,2,3]);
+
+------------------------------------------------------------------------------
+8) Create a function that takes height and width and finds the perimeter of a rectangle.
+
+function findPerimeter(num1,num2)
+{
+ var a = (2)*(num1+num2);
+ console.log(a);
+
+}
+findPerimeter(6,7);
+findPerimeter(20,10);
+findPerimeter(2,9);
+------------------------------------------------------------------
+9) Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+
+function lessThan100(num1,num2) 
+{
+  var sum = num1 + num2 ;
+  if(sum<100)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+console.log(lessThan100(22,15)); 
+console.log(lessThan100(83,34));
+----------------------------------------------------------------------------------
+10) Find the remainder 
+
+function remainder(num1,num2) 
+
+{
+  
+var rem = num1%num2 ;
+  
+console.log(rem);
+    
+
+}
+
+remainder(4,3); 
+remainder(-9,45);
+-------------------------------------------------------------------------------------
+11)  Implement a function that returns the total number of legs of all the animals.
+
+function CountAnimals(num1,num2,num3)
+{
+ 
+var total = ((2)*num1)+((4)*num2)+((4)*num3)
+  
+console.log(total);
+    
+
+}
+
+CountAnimals(2, 3, 5); 
+
+CountAnimals(5, 2, 8);
+------------------------------------------------------------------------------------
+12) Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.
+
+function frames(num1,num2) 
+{
+ var fps = ((60*num1)*num2);
+ console.log(fps);
+}
+frames(10,1);
+frames(10,25);
+------------------------------------------------------------------------------------------
+13) Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
+
+function divisibleByFive(num1) 
+{
+  if(num1%5===0)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+console.log(divisibleByFive(5)); 
+console.log(divisibleByFive(37));
+----------------------------------------------------------------------------------------------------------
+14) Write a function called “isEven”. Given a number, “isEven” returns whether it is even.
+
+function isEven(num1) 
+{
+  if(num1!==parseInt(num1))
+  
+{
+    
+    return -1;  
+  
+}
+  else if(num1%2===0)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+console.log( isEven(12)); 
+console.log( isEven(0));
+console.log( isEven(11));
+console.log( isEven("11h"));             
+----------------------------------------------------------------------------------------------------------
+15) Given 2 numbers, “areBothOdd” returns whether or not both of the given numbers are odd.
+
+function areBothOdd(num1,num2)
+ 
+{
+ 
+ if((num1%2!==0)&&(num2%2!==0))
+ 
+ {
+   
+ return true;
+ 
+ }
+  
+else
+
+  {
+    
+return false;
+ 
+ }
+
+}
+
+console.log(areBothOdd(1,3)); 
+
+console.log(areBothOdd(1,4));
+
+console.log(areBothOdd(2,3));
+
+console.log(areBothOdd(0,0));
+--------------------------------------------------------------------------------------------------
+16) Given a first and a last name, “getFullName” returns a single string with the given first and last names separated by a single space.
+
+var a = ["GUVI","GEEK"];
+
+var b = ["GUVI",];
+
+var c = [,"GEEK"];
+
+function getLengthOfWord(a)
+
+{
+ 
+console.log(a.join(" "));
+
+}
+
+
+getLengthOfWord(a);
+
+getLengthOfWord(b);
+
+getLengthOfWord(c);
+---------------------------------------------------------------------------------------------------------------
+17) Given a word, “getLengthOfWord” returns the length of the given word.
+
+var a = "GUVI"
+
+var b = "" ;
+var c ;
+
+var d = 9;
+function getLengthOfWord(a)
+
+{
+ 
+if((a===undefined)||(a===parseInt(a)))
+ {
+    
+console.log(-1);
+ 
+}
+ 
+else
+ 
+{
+var c = a.length;
+ 
+console.log(c);
+
+}
+}
+getLengthOf(a);
+getLengthOf(b);
+getLengthOf(c);
+getLengthOf(d);
+
+-----------------------------------------------------------------------------------------------
+18) Given two words, “isSameLength” returns whether the given words have the same length.
+
+var a = "GUVI"
+var b = "GEEK"
+function isSameLength(str1,str2) 
+{
+  if((str1.length)==((str2.length))
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+console.log( isSameLength(a,b)); 
+---------------------------------------------------------------------------------------
+19) Create a function to calculate the distance between two points defined by their x, y coordinates
+
+function getDistance(x1,y1,x2,y2) 
+{
+  var dis = Math.sqrt(((x2-x1)**2)+((y2-y1)**2))
+  console.log(dis);
+}
+getDistance(100,100,400,300); 
+
+---------------------------------------------------------------------------------------------
+20) Given an array and an integer, “getNthElement” returns the element at the given integer, 
+     within the given array. If the array has a length of 0, it should return ‘undefined’.
+
+function getNthElement(arr,n)
+ 
+{
+  
+ if((arr.length)>0)
+ 
+ {
+     
+ var a = arr[n];
+     
+ console.log(a);
+ 
+ }
+  
+else
+ 
+ {
+    
+ console.log(a); 
+ 
+ }
+
+}
+
+getNthElement([1,2,3],1); //returns the element at index 1
+
+getNthElement([],1);  //  returns -1 as there is nothing in the array
+
+-----------------------------------------------------------------------------------------------------
+21)  Given an array, “getLastElement” returns the last element of the given array.
+       If the given array has a length of 0, it should return ‘-1’.
+
+function getNthElement(arr)
+ 
+{
+  
+ if((arr.length)>0)
+ 
+ {
+     
+ var a = (arr[arr.length -1]);
+     
+ console.log(a);
+ 
+ }
+  
+else
+ 
+ {
+    
+ console.log(-1); 
+ 
+ }
+
+}
+
+getNthElement([1,2,3,4]); 
+getNthElement([]); 
+
+------------------------------------------------------------------------------------------------------------
+22)  Given an object and a key, “getProperty” returns the value of the property at the given key. 
+       If there is no property at the given key, it should return undefined.
+
+
+var obj = { mykey : "value"}
+
+function getProperty(obj)
+{
+   console.log(obj[key]);
+}
+getProperty(obj,'mykey');
+getProperty(obj,'dummykey');
+
+-----------------------------------------------------------------------------------------------------
+
+23)  Write a function called “addProperty”.
+        Given an object and a key, “addProperty” adds a new property on the given object with a value            of true.
+
+var obj = { }
+function addProperty(obj,key)
+{
+  obj[key]="true";
+ console.log(obj);
+}
+addProperty(obj,'mykey');
+
+----------------------------------------------------------------------------------------------------------
+
+24) Given an object and a key, “removeProperty” removes the given key from the given object.
+
+
+var obj = { name : "value"}
+function removeProperty(obj,key)
+{
+ delete obj.key;
+ console.log(obj.key);
+}
+removeProperty(obj,"name");
+
+---------------------------------------------------------------------------------------------
+25) Return an array, where the first element is the count of positives numbers
+      and the second element is sum of negative numbers.
+
+
+function countPositivesSumNegatives(arr)
+
+{
+
+var arr2 =[0,0]
+for(var i = 0;i<arr.length;i++)
+
+{
+ 
+if(arr.length < 1)
+{
+ return [];
+}   
+else if(arr[i]>=0)
+    
+{
+        
+arr2[0]= arr2[0] + 1;   
+ }
+   
+ else
+    
+{
+       
+arr2[1]= arr2[1] + arr[i];  
+}
+
+}
+
+return arr2;
+}
+
+console.log(countPositivesSumNegatives([-5, 10, -3, 12, -9, 5, 90, 0, 1]));
+---------------------------------------------------------------------
+26) Create a function that receives an array of numbers and 
+      returns an array containing only the positive numbers
+
+function countPositives(arr) 
+{
+
+
+var arr2 = [];
+
+for (var i = 0; i < arr.length; i++)
+{
+   
+ 
+ if(arr.length < 1)
+{
+     
+ return [];
+   
+}
+
+else if((arr[i]>=0))
+   
+{
+   
+ arr2.push(arr[i]);
+  
+ }
+
+
+ }
+
+return arr2.join(" ");
+
+}
+
+
+console.log(countPositives([-5, 10, -3, 12, -9, 5, 90, 0, 1]));
+
+--------------------------------------------------------------------------------------
+27) Write a function `powersOfTwo` which will return list of all powers of 2 from 0 to n 
+      (where n is an exponent).
+
+function powersOfTwo(n)
+
+{
+
+var total = "";
+
+for(var i = 0;i<=n;i++)
+
+{
+
+var b = ((2)**i);
+
+total = total + b + " ";
+
+}
+
+console.log(total);
+
+}
+
+powersOfTwo(0);
+
+powersOfTwo(1);
+
+powersOfTwo(2);
+--------------------------------------------------------------------------------------------------
+28) Find the maximum number in an array of numbers
+
+function findMax(arr)
+
+{
+
+var max = arr[0];
+
+for(var i = 0;i<arr.length;i++)
+
+{
+   
+if(arr[i]>=max)
+    
+{
+      
+max = arr[i];
+    
+}
+
+}
+
+console.log(max);
+
+}
+
+findMax([-5, 10, -3, 12, -9, 5, 90, 0, 1]);
+---------------------------------------------------------------------------------------------------
+29) Reverse a string
+
+
+var a = "Dream"
+
+function rev(strr)
+
+{
+
+var str = "";
+
+for(var i = (a.length-1);i>=0;i--)
+
+{
+    
+str = str + a[i];
+
+}
+
+console.log(str.trim());
+
+}
+
+rev(a);
+
+-----------------------------------------------------------------------------------------------------
+30) Calculate the sum of numbers received in a comma delimited string
+
+
+var str = " 1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9 ";
+
+function sumCSV(a)
+
+{
+
+var total = 0;    
+
+var b = a.split(",");
+
+for(var i = 0;i<b.length;i++)
+
+{
+  
+ total = total + (+b[i]);
+
+}
+
+console.log(total);
+
+}
+
+sumCSV(str);
+
+---------------------------------------------------------------------------------------------
+31) Print the first 100 prime numbers
+
+var func = function(n)
+{
+
+var value = "";
+
+for(var i=1;i<=n;i++)
+
+{ 
+   
+ if (i === 1 || i === 0)
+{ 
+   
+ continue; 
+   
+ }
+    
+var flag = 0;
+   
+ 
+for(var j=2;j<=i/2;j++)
+
+
+{
+    
+if(i%j===0)
+   
+ {
+     
+flag = 1;
+      
+break;
+}
+}
+
+if(flag===0)
+
+{
+    
+value = value + i + " ";
+
+
+}
+}
+
+console.log(value);
+}
+func(100);
+---------------------------------------------------------------------------------------------------
+
+32) Create a function that will return in an array the first “nPrimes” 
+      prime numbers greater than a particular number “startAt”
+
+function getPrimes(nPrimes, startAt)
+{
+    var ar = [];
+    
+    var i = startAt;
+    
+    while(ar.length < nPrimes)
+    {
+        if (isPrime(i))
+        {
+            ar.push(i);
+        }
+        
+        i++;
+    }
+    
+    return ar;
+}
+// Returns true if a number is prime
+function isPrime(n)
+{
+    if (n < 2)
+        return false;
+        
+    if (n == 2)
+        return true;
+    
+    var maxDiv = Math.sqrt(n);
+    
+    for(var i = 2; i <= maxDiv; i++)
+    {
+        if (n % i === 0)
+        {
+            return false;
+        }
+    }
+    
+    return true;
+}
+console.log(getPrimes(10, 100));
+
+o/p : [ 101, 103, 107, 109, 113, 127, 131, 137, 139, 149 ]
+-------------------------------------------------------------------------------------------------
+33) Create a function that will merge two arrays and return the result as a new array
+
+var ar1 = [1, 2, 3];
+
+var ar2 = [4, 5, 6];
+
+function mergeArrays(ar1, ar2)
+
+{
+
+var result = [];
+ 
+for(i=0;i<ar1.length;i++)
+    
+{
+        
+result.push(ar1[i]);
+    
+}
+
+return result.concat(ar2);
+
+}
+
+var ar = mergeArrays(ar1, ar2);
+
+console.log(ar);
+
