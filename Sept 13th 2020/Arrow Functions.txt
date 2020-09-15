@@ -57,3 +57,8 @@ console.log(myPrimeArray);
 
 5) Return all the palindromes in an array 
 
+const isPalindrome = (str)=>{
+    const cleanStr = clean(str);
+    const reverseStr = cleanStr.split(" ").reverse.join(" ");
+    return reverseStr===cleanStr;
+}
