@@ -1,3 +1,31 @@
+Write a function which takes 2 params 1) Operation 2) Function Array
+
+function process(a,b) 
+{
+    var val1 = 200, val2= 800;
+    return a[b-1](val1,val2);
+}
+function add(a,b)
+{
+    return a+b
+    
+}function sub(a,b)
+{
+    return a-b
+    
+}
+function mul(a,b)
+{
+    return a*b
+    
+}
+var opers = [add,sub,mul]
+var oper1 = process(opers,1);
+var oper2 = process(opers,2);
+var oper3 = process(opers,3);
+console.log(oper1,oper2,oper3);
+------------------------------------------------------------------------------------------------
+
 Mandatory Zen tasks
 
 1) Add 5 to every number
@@ -14,7 +42,7 @@ O/P : 10
          5
          0
 ------------------------------------------------------------------------------------------
-2) Write a function called ìgetOppositeî. Given a number, return its opposite
+2) Write a function called ‚ÄúgetOpposite‚Äù. Given a number, return its opposite
 
 function getOpposite(num1) 
 
@@ -249,7 +277,7 @@ function divisibleByFive(num1)
 console.log(divisibleByFive(5)); 
 console.log(divisibleByFive(37));
 ----------------------------------------------------------------------------------------------------------
-14) Write a function called ìisEvenî. Given a number, ìisEvenî returns whether it is even.
+14) Write a function called ‚ÄúisEven‚Äù. Given a number, ‚ÄúisEven‚Äù returns whether it is even.
 
 function isEven(num1) 
 {
@@ -274,7 +302,7 @@ console.log( isEven(0));
 console.log( isEven(11));
 console.log( isEven("11h"));             
 ----------------------------------------------------------------------------------------------------------
-15) Given 2 numbers, ìareBothOddî returns whether or not both of the given numbers are odd.
+15) Given 2 numbers, ‚ÄúareBothOdd‚Äù returns whether or not both of the given numbers are odd.
 
 function areBothOdd(num1,num2)
  
@@ -306,7 +334,7 @@ console.log(areBothOdd(2,3));
 
 console.log(areBothOdd(0,0));
 --------------------------------------------------------------------------------------------------
-16) Given a first and a last name, ìgetFullNameî returns a single string with the given first and last names separated by a single space.
+16) Given a first and a last name, ‚ÄúgetFullName‚Äù returns a single string with the given first and last names separated by a single space.
 
 var a = ["GUVI","GEEK"];
 
@@ -329,7 +357,7 @@ getLengthOfWord(b);
 
 getLengthOfWord(c);
 ---------------------------------------------------------------------------------------------------------------
-17) Given a word, ìgetLengthOfWordî returns the length of the given word.
+17) Given a word, ‚ÄúgetLengthOfWord‚Äù returns the length of the given word.
 
 var a = "GUVI"
 
@@ -363,7 +391,7 @@ getLengthOf(c);
 getLengthOf(d);
 
 -----------------------------------------------------------------------------------------------
-18) Given two words, ìisSameLengthî returns whether the given words have the same length.
+18) Given two words, ‚ÄúisSameLength‚Äù returns whether the given words have the same length.
 
 var a = "GUVI"
 var b = "GEEK"
@@ -390,8 +418,8 @@ function getDistance(x1,y1,x2,y2)
 getDistance(100,100,400,300); 
 
 ---------------------------------------------------------------------------------------------
-20) Given an array and an integer, ìgetNthElementî returns the element at the given integer, 
-     within the given array. If the array has a length of 0, it should return ëundefinedí.
+20) Given an array and an integer, ‚ÄúgetNthElement‚Äù returns the element at the given integer, 
+     within the given array. If the array has a length of 0, it should return ‚Äòundefined‚Äô.
 
 function getNthElement(arr,n)
  
@@ -422,8 +450,8 @@ getNthElement([1,2,3],1); //returns the element at index 1
 getNthElement([],1);  //  returns -1 as there is nothing in the array
 
 -----------------------------------------------------------------------------------------------------
-21)  Given an array, ìgetLastElementî returns the last element of the given array.
-       If the given array has a length of 0, it should return ë-1í.
+21)  Given an array, ‚ÄúgetLastElement‚Äù returns the last element of the given array.
+       If the given array has a length of 0, it should return ‚Äò-1‚Äô.
 
 function getNthElement(arr)
  
@@ -453,7 +481,7 @@ getNthElement([1,2,3,4]);
 getNthElement([]); 
 
 ------------------------------------------------------------------------------------------------------------
-22)  Given an object and a key, ìgetPropertyî returns the value of the property at the given key. 
+22)  Given an object and a key, ‚ÄúgetProperty‚Äù returns the value of the property at the given key. 
        If there is no property at the given key, it should return undefined.
 
 
@@ -468,8 +496,8 @@ getProperty(obj,'dummykey');
 
 -----------------------------------------------------------------------------------------------------
 
-23)  Write a function called ìaddPropertyî.
-        Given an object and a key, ìaddPropertyî adds a new property on the given object with a value            of true.
+23)  Write a function called ‚ÄúaddProperty‚Äù.
+        Given an object and a key, ‚ÄúaddProperty‚Äù adds a new property on the given object with a value            of true.
 
 var obj = { }
 function addProperty(obj,key)
@@ -481,7 +509,7 @@ addProperty(obj,'mykey');
 
 ----------------------------------------------------------------------------------------------------------
 
-24) Given an object and a key, ìremovePropertyî removes the given key from the given object.
+24) Given an object and a key, ‚ÄúremoveProperty‚Äù removes the given key from the given object.
 
 
 var obj = { name : "value"}
@@ -732,8 +760,8 @@ console.log(value);
 func(100);
 ---------------------------------------------------------------------------------------------------
 
-32) Create a function that will return in an array the first ìnPrimesî 
-      prime numbers greater than a particular number ìstartAtî
+32) Create a function that will return in an array the first ‚ÄúnPrimes‚Äù 
+      prime numbers greater than a particular number ‚ÄústartAt‚Äù
 
 function getPrimes(nPrimes, startAt)
 {
