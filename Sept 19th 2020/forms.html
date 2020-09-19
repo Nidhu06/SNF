@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table{
+border-collapse:collapse;
+}
+td,th{
+border:1px solid black;
+}
+</style>
+</head>
+<body>
+<h5><p style="text-align:center;"> Request For New PAN Card Or/And Changes or Correction in PAN Data</p> </h5>
+<h5><p style="text-align:center;"><i> Fields marked with *(asterisk) are mandatory. To avoid mistake(s).please refer</i> <u>guidelines</u> and <u>instruction</u></p></h5>
+
+<form>
+<label for = "Citizen">* Whether citizen of India </label>
+<label for = "YES">Yes</label>
+<input type = "radio" id = "YES" name="citizen" value = "YES">
+<label for = "NO">No</label>
+<input type = "radio" id = "NO" name="citizen" value = "NO">
+<br><br>
+<label for = "PAN">* Permanent Account Number(PAN)</label>
+<input type = "text" id = "PAN" name="PAN" size="12" required>
+<br>
+<br>
+<label for = "NAME">* 1.Name  </label>
+<br><br>
+<label for = "TITLE"> Title : </label>
+<label for = "SHRI/MR">Shri/Mr</label>
+<input type = "radio" id = "SHRI/MR" name="Your title" value="SHRI/MR">
+<label for = "SMT./MRS">Smt./Mrs.</label>
+<input type = "radio" id = "SMT./MRS" name="Your title" value="SMT./MRS" >
+<label for = "KUMARI./MS">Kumari/Ms.</label>
+<input type = "radio" id = "KUMARI./MS" name="Your title" value="KUMARI./MS">
+<br><br>
+<label for = "LASTNAME">Last Name/Surname</label>
+<label for = "FIRSTNAME">First Name  </label>
+<label for = "MIDDLENAME">Middle Name  </label>
+<br>
+<input type = "text" id = "LASTNAME" name="LASTNAME" value= "LASTNAME" required>
+<input type = "text" id = "FIRSTNAME" name="FIRSTNAME" value="FIRSTNAME"  required>
+<input type = "text" id = "MIDDLENAME" name="MIDDLENAME" value="MIDDLENAME" required>
+<br>
+<br>
+<label for = "Nameincard">*Name as you would like it printed on the card(Prefix like Shri,Smt,Kumari,Late,Dr,CA,Mrs,M/s,Alias etc. are not allowed)</label>
+<br>
+<input type = "text" id = "Nameincard" name="Nameincard" value= "Nameincard" required>
+<br>
+<br>
+<label for = "Details">Details of Parents(Prefix like Shri,Smt,Kumari,Late,Dr,CA,Mrs,M/s,Alias etc. are not allowed)</label><br>
+<br>
+<label for = "Apply">Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only : </label>
+<label for = "YES">Yes</label>
+<input type = "radio" id = "YES" name="citizen" value = "YES">
+<label for = "NO">No</label>
+<input type = "radio" id = "NO" name="citizen" value = "NO">
+<br>
+<br>
+<label for = "FATHERNAME">*Father's Name(Mandatory field.Even married women should give father's name only)</label>
+<br>
+<br>
+<label for = "LASTNAME">Last Name/Surname</label>
+<label for = "FIRSTNAME">First Name  </label>
+<label for = "MIDDLENAME">Middle Name  </label>
+<br>
+<input type = "text" id = "LASTNAME" name="LASTNAME" value= "LASTNAME" required>
+<input type = "text" id = "FIRSTNAME" name="FIRSTNAME" value="FIRSTNAME"  required>
+<input type = "text" id = "MIDDLENAME" name="MIDDLENAME" value="MIDDLENAME" required>
+<br>
+<br>
+<label for="MOTHERNAME">Mother's Name(This field is optional)</label>
+<br>
+<br>
+<label for = "LASTNAME">Last Name/Surname</label>
+<label for = "FIRSTNAME">First Name  </label>
+<label for = "MIDDLENAME">Middle Name  </label>
+<br>
+<input type = "text" id = "LASTNAME" name="LASTNAME" value= "LASTNAME" >
+<input type = "text" id = "FIRSTNAME" name="FIRSTNAME" value="FIRSTNAME" >
+<input type = "text" id = "MIDDLENAME" name="MIDDLENAME" value="MIDDLENAME">
+<br>
+<br>
+<label for ="PARENTNAME">*4. Select Parent name which is to be printed on the card<br>
+(In case no option is provided then PAN card will be issued with father's name)</label>
+
+<label for = "FATHERNAME">Father Name</label>
+<input type = "radio" id = "FATHERNAME" name="NAME" value = "FATHERNAME">
+<label for = "MOTHERNAME">Mother Name</label>
+<input type = "radio" id = "MOTHERNAME" name="NAME" value = "MOTHERNAME">
+<br><br>
+
+<label for ="DOB">*5. Date of Birth/Incorparation/Agreement/Partnership or Trust Deed
+/Formation of Body of Individuals/Association of Persons</label>
+<label for = "dd">DD</label>
+<label for = "mm">MM</label>
+<label for = "yyyy">YYYY</label>
+<input type="number" id= "dd" name="dd" min="1" max="31" required>
+<input type="number" id= "mm" name="mm" min="1" max="12" required>
+<input type="text" id= "yyyy" name="yyyy" value="yyyy" maxlength="4" size="4" required>
+<br>
+<br>
+<label for="GENDER">* 6.Gender</label>
+
+<label for = "MALE">Male</label>
+<input type = "radio" id = "MALE" name="gender" value="MALE">
+<label for = "FEMALE">Female</label>
+<input type = "radio" id = "FEMALE" name="gender" value="FEMALE" >
+<label for = "TRANSGENDER">TransGender</label>
+<input type = "radio" id = "TRANSGENDER" name="gender" value="TRANSGENDER">
+<br>
+<br>
+
+<label for = "PHOTO MISMATCH">7.Photo Mismatch</label><br>
+<label for = "SIGN MISMATCH">8.Signature Mismatch</label>
+<br>
+<br>
+<label for = "ADDRESS"> 9. Address for Communication: </label>
+<label for = "RESIDENTIAL">Residential</label>
+<input type = "radio" id = "RESIDENTIAL" name="address" value="RESIDENTIAL">
+<label for = "OFFICE">Office</label>
+<input type = "radio" id = "OFFICE" name="address" value="OFFICE" >
+<br>
+<label for="OFFICE NAME">Office Name <i>(to be filled only in case of office address)</i></label>
+<input type="text" id="OFFICE NAME" name="OFFICE NAME">
+<br>
+<label for ="DoorNo">Flat/Door/Block No.</label>
+<input type="text" id="DoorNo" name="DoorNo">
+<br>
+<label for ="BuildingName">Name of Premises/Building/Village.</label>
+<input type="text" id="BuildingName" name="BuildingName">
+<br>
+<label for ="LANE">Road/Street/Lane/Post Office</label>
+<input type="text" id="Lane" name="Lane">
+<br>
+<label for ="AREA">Area/Locality/Taluka/Sub-Division</label>
+<input type="text" id="AREA" name="AREA">
+<br>
+<label for ="TOWN">Town/City/District</label>
+<input type="text" id="Town" name="Town">
+<br>
+<label for ="STATE">State/Union Territory</label>
+<select id="State" name="State">
+<option>Please Select</option>
+<option value="TN">Tamil Nadu</option>
+<option value="AP">Andhra Pradesh</option>
+<option value="KT">Karnataka</option>
+<option value="KR">Kerela</option>
+</select>
+<br>
+<label for ="PIN">PIN <i>(Indicating PIN is mandatory)</i></label>
+<input type="text" id="PIN" name="PIN">
+<br>
+<label for ="COUNTRY"> Country </label>
+<select id="COUNTRY" name="COUNTRY" disabled>
+<option></option>
+</select>
+<br>
+<label for ="ZIP">Zip</label>
+<input type="text" id="ZIP" name="ZIP" disabled>
+<br>
+<label for ="PROOF">10. If you desire to update your address,give required details & <u>Submit proof of other address also</u></label>
+<br><br><br>
+<table>
+<tr> 
+<td>11. Telephone No.<br>
+(Country code is compulsory)
+<td><label for = "CODE">Country Code(ISD)</label>
+<select id="CODE" name="CODE">
+<option value="" selected="" title="-- Please select --">-- Please select --</option>
+<option>600056</option>
+<option>530045</option>
+</select>
+<table border="2">
+<tr>
+<td>
+<input type="radio" id="MOBILE" name="NUMBER" value="MOBILE">
+<label for = "MOBILE">Mobile No.</label>
+<input type="radio" id="TELEPHONE" name="NUMBER" value="TELEPHONE">
+<label for = "TELEPHONE">Telephone No.</label>
+</td>
+</tr>
+<tr>
+<td>
+<label for ="AREA">Area</label>
+<label for ="MOT">Mob/Tel No.</label><br>
+<input type="text" id="AREA" name="AREA" size="6">
+<input type="text" id="MOT" name="MOT" size="10">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+
+<label for ="EMAIL">Email ID </label>
+<input type="email" id="EMAIL" name="EMAIL">
+<br>
+<label for ="Checkcase">In case of a citizen of India,then</label>
+<input type="radio" id="aadhaar" name="proof" value="aadhaar">
+<label for ="aadhaar">AADHAAR </label>
+<input type="radio" id="eid" name="proof" value="eid">
+<label for ="eid">EID </label>
+<br>
+<br>
+<label for="AADHAAR NO">*12.AADHAAR number :</label>
+<input type="text" id="AADHAAR NO" name="AADHAAR NO"><br>
+<i>In case AADHAAR number is provided,
+then proof of AADHAAR along with supporting documents is to be submitted to NSDL</i>
+<br>
+<label for="Enrollement ID">*Name as per AADHAAR letter or<br>
+as per the enrollment ID of Aadhaar application form</label>
+<input type="text" id="Enrollement ID" name="Enrollement ID">
+<br>
+<label for="gstn">13.GSTN</label>
+<input type="text" id="gstn" name="gstn">
+<br>
+<label for="PANS">14.Mention other Permanent Account Numbers(PANs) if any,inadvertently allotted to you.<u>Submit proof of surrendered PAN(s) along with the application.</u></label>
+<br>
+
+<label for="pan1"> PAN1 </label>
+<input type="text" id="pan1" name="pan1">
+<label for="pan2"> PAN2 </label>
+<input type="text" id="pan2" name="pan2">
+<br>
+<label for="pan3"> PAN3 </label>
+<input type="text" id="pan3" name="pan3">
+<label for="pan4"> PAN4 </label>
+<input type="text" id="pan4" name="pan4">
+<br>
+<br>
+<label for="verify">15.Verification</label>
+<p> I/we <input type ="text" id="verify" name="verify">the applicant,in the capacity of  
+<select id="verify" name="verify">
+<option >Please Select</option>
+<option>Himself/Herself</option>
+<option>Representative Assessee</option>
+</select>
+do hereby declare that what is stated above is true to the best of my information and belief.<br>
+I have enclosed <input type ="text">(number of documents) in support of proposed changes/corrections.</p>
+<br>
+<label for="place">Place</label>
+<input type="text" id="text" name="text">
+<br>
+<p>Verified today<input type="date" id="DATE" name="DATE"></p>
+<br>
+<p> I/We have enclosed <br>
+<select id="docs" name="docs">
+<<option value="" selected="" title="-- Please select --">-- Please select --</option>
+<option>Copy of passport</option>
+<option>Copy of person of Indian Origin card issued by Government of India</option>
+<option>Copy of Overseas Citizenship of India card issued by Government of India</option>
+<option>Copy of National ID/Citizenship ID/Taxpayer ID attested by Indian Embassy/Consulate/High Commission/Apostille/authorised officials of overseas branches of Scheduled Banks registered in India</option>
+</select> 
+ as proof of identy,as proof of address, 
+<select name="PAN_PRF_ADDR" id="selectAccordingToCountryPOA">
+<option value="" selected="" title="-- Please select --">-- Please select --</option>
+<option value="8" title="Copy of passport">Copy of passport</option>
+<option value="5" title="Copy of Bank account statement in the country of residence">Copy of Bank account statement in the country of residence</option>
+<option value="38" title="Copy of certificate of residence in India or Residential permit issued by the State Police Authority">Copy of certificate of residence in India or Residential permit issued by the State Police Authority</option>
+<option value="39" title="Copy of the registration certificate issued by the Foreigner's Registration Office showing Indian address">Copy of the registration certificate issued by the Foreigner's Registration Office showing Indian address</option>
+<option value="40" title="Copy of Person of Indian Origin card issued by Government of India">Copy of Person of Indian Origin card issued by Government of India</option>
+<option value="41" title="Copy of Non-resident External bank account statement in India">Copy of Non-resident External bank account statement in India</option>
+<option value="42" title="Copy of Visa granted and copy of appointment letter or contract from Indian Company and Certificate (in original) of Indian Address issued by the employer">Copy of Visa granted and copy of appointment letter or contract from Indian Company and Certificate (in original) of Indian Address issued by the employer</option>
+<option value="43" title="Copy of Overseas Citizen of India card issued by Government of India">Copy of Overseas Citizen of India card issued by Government of India</option></select>
+</select>
+<select id="selectAccordingToCountryPOB" name="PAN_PRF_DOB">
+<option value="" selected="">-- Please select --</option>
+<option value="0001">Copy of Birth certificate issued by the Municipal Authority or any office authorised to issue Birth and Death Certificate by the Registrar of Birth and Deaths or the Indian Consulate</option>
+<option value="0002">Copy of Pension payment order</option><option value="0003">Copy of Marriage certificate issued by Registrar of Marriages</option><option value="0004">Copy of Matriculation certificate</option>
+<option value="0005">Copy of Passport</option><option value="0006">Copy of Driving licence</option>
+<option value="0007">Copy of Domicile certificate issued by the Government</option>
+<option value="0008">Copy of Affidavit sworn before a magistrate stating the date of birth</option>
+<option value="0009">Copy of Elector�s photo identity card</option>
+<option value="0010">Copy of Aadhaar Card issued by the Unique Identification Authority of India</option>
+<option value="0011">Copy of Central Government Health Service Scheme Card</option>
+<option value="0012">Copy of Ex-Servicemen Contributory Health Scheme photo card</option>
+<option value="0013">Copy of Photo identity card issued by the Central Government or State Government or Public Sector Undertaking</option>
+<option value="0014">Copy of Mark sheet of recognised board</option></select>
+as proof of date of birth and <select name="PAN_PRF_PAN">
+           <option value="">--Please Select--
+           </option><option value="1"> Copy of PAN card
+           </option><option value="2"> Copy of PAN allotment letter
+           </option><option value="3"> No document
+       </option></select>
+</form>
+</body>
+</html>
