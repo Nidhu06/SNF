@@ -1,0 +1,99 @@
+.naam{
+    font-family: "Times New Roman";
+    font-size:45px;
+    font-weight: bold;
+    color:lightblue;
+    background: #66A0D9;
+    background: -moz-linear-gradient(45deg, #66A0D9 0%, #8F5AA4 79%, #D4A3FF 100%);
+    background: -webkit-linear-gradient(45deg, #66A0D9 0%, #8F5AA4 79%, #D4A3FF 100%);
+    background: linear-gradient(45deg, #66A0D9 0%, #8F5AA4 79%, #D4A3FF 100%);
+    text-align:center;
+    }
+    .basic{
+      font-family: "Times New Roman";
+      font-size: 18px;
+      text-align:center;
+      font-weight: bold;
+    }
+    .h3{
+      font-family: "Times New Roman";
+      font-size: 20px;
+      font-weight: bold;
+      padding : 10px;
+      color:lightblue;
+    background: #66A0D9;
+    background: -moz-linear-gradient(45deg, #66A0D9 0%, #8F5AA4 79%, #D4A3FF 100%);
+    background: -webkit-linear-gradient(45deg, #66A0D9 0%, #8F5AA4 79%, #D4A3FF 100%);
+    background: linear-gradient(45deg, #66A0D9 0%, #8F5AA4 79%, #D4A3FF 100%);
+    }
+    .p{
+      font-family:"Times New Roman";
+      font-size: 15px;
+      font-weight: bold;
+    
+      }
+    .h4{
+      font-family: "Times New Roman";
+      font-size: 16px;
+      font-weight: bold;
+    }  
+    .li{
+    font-family:"Times New Roman";
+    font-size: 15px;
+    font-weight: bold;}
+     
+    .div{
+    text-align: center;} 
+    
+    
+    * {box-sizing: border-box}
+    
+    .container {
+      width: 100%;
+      border: 1px solid black;
+    }
+    
+    .skills {
+      text-align:right;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color: black;
+      font-weight: bold;
+    }
+    
+    .oracle {width: 80%; background-color: pink; }
+    .aws {width: 90%; background-color: rgb(119, 191, 216);}
+    .php {width: 65%; background-color:pink;}
+    .python {width: 70%; background-color:rgb(119, 191, 216);} 
+    .c{width: 55%; background-color:pink;}
+    .cc{width: 60%; background-color: rgb(119, 191, 216);}
+    
+    .fi {
+      position: absolute;
+      left: 950px; 
+      top : 90%;  
+      top: 190px;
+      right: 120px;
+    } 
+    
+    .move{
+    position: absolute; 
+    left: 950px; 
+    top : 500px;}
+    
+    .move1{
+     position: absolute; 
+     top: 190px;
+     left: 200px;
+    }
+     
+    .move2{
+     position: absolute;
+     top: 365px;
+     left: 200px; 
+     }
+
+    body
+    {
+      background-color:rgb(200, 255, 255) ;
+    }
