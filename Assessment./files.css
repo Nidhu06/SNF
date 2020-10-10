@@ -1,0 +1,83 @@
+.backdrop
+{
+    background-color: rgb(203,203,203);
+    font-size:20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:10px;
+}
+.textbox
+{
+    height:30px;
+}
+
+.fixed-width-label
+{
+    width : 250px;
+    display : inline-block;
+}
+
+i{
+    color:grey;
+    display : inline-block;
+}
+
+.header 
+{   
+    position: absolute;
+    left : 200px;
+    font-size: 20px;
+    color: grey;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+
+}
+.container
+{
+    font-size: 20px;
+    color: grey;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:80%;
+  
+}
+
+li :hover 
+{
+  background-color: lightblue;
+}
+
+nav {
+    float : right;
+}
+
+nav ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+nav li{
+
+    display: inline-block;
+    margin : 0 35px;
+}
+
+nav a 
+{
+    color:grey;
+    text-decoration: none;
+}
+
+p.container
+{  
+    position:absolute;
+    top:120px;
+    left:250px;
+    background-color:lightgrey;
+    color:black;
+    width:50%;
+    height:50%;
+    text-align:center;
+}
+
