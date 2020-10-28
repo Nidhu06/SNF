@@ -1,0 +1,25 @@
+{
+  "name": "oct-25th-2020",
+  "version": "1.0.0",
+  "description": "tv-creation",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev-build": "webpack --watch",
+    "serve": "webpack-dev-server"
+  },
+  "keywords": [
+    "names"
+  ],
+  "author": "Nida Fathima",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^8.0.7",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
